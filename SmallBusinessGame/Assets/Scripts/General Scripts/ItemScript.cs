@@ -7,7 +7,7 @@ public class ItemScript : MonoBehaviour
     //Private Variables
     [SerializeField] private string itemType;
     [SerializeField] private string itemName;
-    [SerializeField] private string itemValue;
+    [SerializeField] private float itemValue;
     //Public Variables
     public string ItemType{
         get { return itemType; }
@@ -17,10 +17,10 @@ public class ItemScript : MonoBehaviour
         get { return itemName; }
         set { }
     }
-    public string ItemValue
+    public float ItemValue
     {
         get { return ItemValue; }
-        set { itemValue = value; }
+        set { itemValue = value; } //needs to be able to be set by the register when pulling money out
     }
 
     //public functions
