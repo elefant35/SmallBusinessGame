@@ -22,4 +22,10 @@ public class ItemScript : MonoBehaviour
         get { return ItemValue; }
         set { }
     }
+
+    //public functions
+    public void deleteItem()
+    {
+        Destroy(gameObject);
+    }
 }
