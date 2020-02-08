@@ -5,9 +5,9 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour
 {
     //Private Variables
-    private string itemType;
-    private string itemName;
-    private string itemValue;
+    [SerializeField] private string itemType;
+    [SerializeField] private string itemName;
+    [SerializeField] private string itemValue;
     //Public Variables
     public string ItemType{
         get { return itemType; }
@@ -20,7 +20,7 @@ public class ItemScript : MonoBehaviour
     public string ItemValue
     {
         get { return ItemValue; }
-        set { }
+        set { itemValue = value; }
     }
 
     //public functions
