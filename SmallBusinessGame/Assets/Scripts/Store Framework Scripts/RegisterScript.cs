@@ -7,6 +7,8 @@ public class RegisterScript : MonoBehaviour
     //Private Variables
     private float moneyInRegister;
     [SerializeField] GameObject moneyPrefab;
+    private bool isManned = false;
+    private GameObject employeeOperating;
 
     //Public Variables
     public float MoneyInRegister //Tracks the Money currently in the register
@@ -19,6 +21,11 @@ public class RegisterScript : MonoBehaviour
         {
             moneyInRegister = value;
         }
+    }
+    public bool IsManned //tracks whether or not the register is manned read only to public
+    {
+        get { return isManned; }
+        set { }
     }
 
 
@@ -33,6 +40,18 @@ public class RegisterScript : MonoBehaviour
             return moneyReturned;
         }
         else return null;
+    }
+
+    public void ManRegister(GameObject Employee)
+    {
+        employeeOperating = Employee;
+        isManned = true;
+    }
+
+    public void UnManRegister()
+    {
+        employeeOperating = null;
+        isManned = false;
     }
 
 }
