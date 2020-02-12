@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class WalkController : MonoBehaviour
 {
-    [SerializeField] private Transform goal;
+    [SerializeField] private Transform goal; // goal is the location where the character should go
 
     // Start is called before the first frame update
     void Start()
@@ -18,5 +18,13 @@ public class WalkController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    //Public functions
+    public void ChangeGoal(Transform newGoal)
+    {
+        goal = newGoal;
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+        agent.destination = goal.position;
     }
 }
