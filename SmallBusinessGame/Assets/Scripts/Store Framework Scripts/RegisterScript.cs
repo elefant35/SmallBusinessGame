@@ -42,13 +42,13 @@ public class RegisterScript : MonoBehaviour
         else return null;
     }
 
-    public void ManRegister(GameObject Employee)
+    public void ManRegister(GameObject Employee) //set an employee as manning the register
     {
         employeeOperating = Employee;
         isManned = true;
     }
 
-    public void UnManRegister()
+    public void UnManRegister() //remove an employee from the register
     {
         employeeOperating = null;
         isManned = false;
