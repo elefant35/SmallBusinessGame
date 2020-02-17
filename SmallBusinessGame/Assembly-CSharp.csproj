@@ -68,7 +68,11 @@
     <Compile Include="Assets\Scripts\Player Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Store Framework Scripts\RegisterScript.cs" />
     <Compile Include="Assets\Scripts\Store Framework Scripts\StationScript.cs" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
     <None Include="Assets\SimplePeople\Changelog.txt" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Global.shader" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Tyler/Documents/GameDev/SmallBusinessGame/SmallBusinessGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
