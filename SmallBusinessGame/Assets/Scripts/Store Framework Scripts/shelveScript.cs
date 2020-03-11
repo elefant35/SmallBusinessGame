@@ -68,7 +68,7 @@ public class shelveScript : MonoBehaviour
         return itemsOnShelf;
     }
 
-    public GameObject[] returnItemsOfType(string itemType) //THIS FUNCTION IS UNTESTED BUT EXPECTED TO BE CORRECT
+    public GameObject[] returnItemsOfType(int itemType) //THIS FUNCTION IS UNTESTED BUT EXPECTED TO BE CORRECT
     {
         int counter = -1;
         
